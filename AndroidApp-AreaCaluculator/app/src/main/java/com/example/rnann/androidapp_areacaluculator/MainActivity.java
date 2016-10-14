@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,31 +64,46 @@ public class MainActivity extends AppCompatActivity {
 
                 //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
 
-                length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
-                length2 = Double.parseDouble(lengthTwoValueEditText.getText().toString());
-
-                //Done reading Input values entered by the User!!
+                //if input values are null
 
 
-                //printing the values read to logcat to check functioning of the App
+                if (lengthOneValueEditText.getText().toString().equals(null)||lengthOneValueEditText.getText().toString().equals("")||lengthTwoValueEditText.getText().toString().equals(null)||lengthTwoValueEditText.getText().toString().equals("")){
 
-                Log.d("rahul","length1 is :"+length1);
-                Log.d("rahul","length2 is :"+length2);
-
-                // Done checking, Values got printed  in the LogCat!!
-
-                //Calculating the area
-                area = 0.5*length1*length2;
-                Log.d("rahul","triangle area is :"+area);
-
-               //converting area from double to string -> to display the result as text on the result Text View
-                result = Double.toString(area);
+                    Toast.makeText(MainActivity.this,"Please Enter values in  Length1 and Length2 respectively!!", Toast.LENGTH_SHORT).show();
 
 
-                resultValueTextView.setText(result);
 
-                //Calculated area and printed it on the Area Result Text View!!
+                }else {
 
+
+                    length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
+                    length2 = Double.parseDouble(lengthTwoValueEditText.getText().toString());
+
+                    //Done reading Input values entered by the User!!
+
+
+                    //printing the values read to logcat to check functioning of the App
+
+                    Log.d("rahul", "length1 is :" + length1);
+                    Log.d("rahul", "length2 is :" + length2);
+
+                    // Done checking, Values got printed  in the LogCat!!
+
+                    //Calculating the area
+                    area = 0.5 * length1 * length2;
+                    Log.d("rahul", "triangle area is :" + area);
+
+                   
+
+                    //converting area from double to string -> to display the result as text on the result Text View
+                    result = Double.toString(area);
+
+
+                    resultValueTextView.setText(result);
+
+                    //Calculated area and printed it on the Area Result Text View!!
+
+                }
             }
         });
 
@@ -99,33 +115,43 @@ public class MainActivity extends AppCompatActivity {
 
                       //Reading the input length values
 
-                      //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
+                      if (lengthOneValueEditText.getText().toString().equals(null)||lengthOneValueEditText.getText().toString().equals("")){
 
-                      length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
-                      lengthTwoValueEditText.setText("");
+                          Toast.makeText(MainActivity.this,"Please Enter value in  Length1 respectively!!", Toast.LENGTH_SHORT).show();
 
-                      //Done reading Input values entered by the User!!
-
-
-                      //printing the values read to logcat to check functioning of the App
-
-                      Log.d("rahul","length1 is :"+length1);
-                      Log.d("rahul","length2 is :"+length2);
-
-                      // Done checking, Values got printed  in the LogCat!!
-
-                      //Calculating the area
-                      area = length1*length1;
-                      Log.d("rahul","square area is :"+area);
-
-                      //converting area from double to string -> to display the result as text on the result Text View
-                      result = Double.toString(area);
+                      }else {
 
 
-                      resultValueTextView.setText(result);
+                          //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
 
-                      //Calculated area and printed it on the Area Result Text View!!
+                          length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
+                          lengthTwoValueEditText.setText("");
 
+                          //Done reading Input values entered by the User!!
+
+
+                          //printing the values read to logcat to check functioning of the App
+
+                          Log.d("rahul", "length1 is :" + length1);
+                          Log.d("rahul", "length2 is :" + length2);
+
+                          // Done checking, Values got printed  in the LogCat!!
+
+                          //Calculating the area
+                          area = length1 * length1;
+                          Log.d("rahul", "square area is :" + area);
+
+
+
+                          //converting area from double to string -> to display the result as text on the result Text View
+                          result = Double.toString(area);
+
+
+                          resultValueTextView.setText(result);
+
+                          //Calculated area and printed it on the Area Result Text View!!
+
+                      }
                   }
               });
 
@@ -138,34 +164,46 @@ public class MainActivity extends AppCompatActivity {
 
                 //Reading the input length values
 
-                //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
 
-                length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
-                lengthTwoValueEditText.setText("");
+                if (lengthOneValueEditText.getText().toString().equals(null)||lengthOneValueEditText.getText().toString().equals("")){
 
-                //Done reading Input values entered by the User!!
+                    Toast.makeText(MainActivity.this,"Please Enter value in  Length1 respectively!!", Toast.LENGTH_SHORT).show();
 
-
-                //printing the values read to logcat to check functioning of the App
-
-                Log.d("rahul","length1 is :"+length1);
-                Log.d("rahul","length2 is :"+length2);
-
-                // Done checking, Values got printed  in the LogCat!!
-
-                //Calculating the area
-                area = 3.14*length1*length1;
-                Log.d("rahul","circle area is :"+area);
-
-                //converting area from double to string -> to display the result as text on the result Text View
-                result = Double.toString(area);
+                }else {
 
 
-                resultValueTextView.setText(result);
+                    //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
 
-                //Calculated area and printed it on the Area Result Text View!!
+                    length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
+                    lengthTwoValueEditText.setText("");
+
+                    //Done reading Input values entered by the User!!
 
 
+                    //printing the values read to logcat to check functioning of the App
+
+                    Log.d("rahul", "length1 is :" + length1);
+                    Log.d("rahul", "length2 is :" + length2);
+
+                    // Done checking, Values got printed  in the LogCat!!
+
+                    //Calculating the area
+                    area = 3.14 * length1 * length1;
+                    Log.d("rahul", "circle area is :" + area);
+
+
+
+                    //converting area from double to string -> to display the result as text on the result Text View
+                    result = Double.toString(area);
+
+
+
+                    resultValueTextView.setText(result);
+
+                    //Calculated area and printed it on the Area Result Text View!!
+
+
+                }
             }
         });
 
@@ -180,31 +218,59 @@ public class MainActivity extends AppCompatActivity {
 
                 //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
 
-                length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
-                length2 = Double.parseDouble(lengthTwoValueEditText.getText().toString());
 
-                //Done reading Input values entered by the User!!
+                if (lengthOneValueEditText.getText().toString().equals(null)||lengthOneValueEditText.getText().toString().equals("")||lengthTwoValueEditText.getText().toString().equals(null)||lengthTwoValueEditText.getText().toString().equals("")){
 
-
-                //printing the values read to logcat to check functioning of the App
-
-                Log.d("rahul","length1 is :"+length1);
-                Log.d("rahul","length2 is :"+length2);
-
-                // Done checking, Values got printed  in the LogCat!!
-
-                //Calculating the area
-                area = length1*length2;
-                Log.d("rahul","rectangle area is :"+area);
-
-                //converting area from double to string -> to display the result as text on the result Text View
-                result = Double.toString(area);
+                    Toast.makeText(MainActivity.this,"Please Enter values in  Length1 and Length2 respectively!!", Toast.LENGTH_SHORT).show();
 
 
-                resultValueTextView.setText(result);
 
-                //Calculated area and printed it on the Area Result Text View!!
+                }else {
 
+                    length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
+                    length2 = Double.parseDouble(lengthTwoValueEditText.getText().toString());
+
+                    //Done reading Input values entered by the User!!
+
+
+                    //printing the values read to logcat to check functioning of the App
+
+                    Log.d("rahul", "length1 is :" + length1);
+                    Log.d("rahul", "length2 is :" + length2);
+
+                    // Done checking, Values got printed  in the LogCat!!
+
+                    //Calculating the area
+                    area = length1 * length2;
+                    Log.d("rahul", "rectangle area is :" + area);
+
+
+
+                    //converting area from double to string -> to display the result as text on the result Text View
+                    result = Double.toString(area);
+
+
+                    resultValueTextView.setText(result);
+
+                    //Calculated area and printed it on the Area Result Text View!!
+
+                }
+
+            }
+        });
+
+
+        //When 'Clear All' Button is Clicked We catch the Click via Handlers
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //clearing the input values
+
+                lengthOneValueEditText.getText().clear();
+                lengthTwoValueEditText.getText().clear();
+                resultValueTextView.setText("");
 
             }
         });
