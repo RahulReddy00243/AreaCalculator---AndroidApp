@@ -23,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
     Button rectangle;
     Button clear;
 
-    String length1;
-    String length2;
+    double  length1;
+    double  length2;
+
+    double area;
 
     // Done With Declaration!!
 
@@ -50,14 +52,17 @@ public class MainActivity extends AppCompatActivity {
         // Done with Accessing!!
 
 
+        //When 'Area Of Triangle' Button is Clicked We catch the Click via Handlers
         triangle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 //Reading the input length values
 
-                length1 = lengthOneValueEditText.getText().toString();
-                length2 = lengthTwoValueEditText.getText().toString();
+                //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
+
+                length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
+                length2 = Double.parseDouble(lengthTwoValueEditText.getText().toString());
 
                 //Done reading Input values entered by the User!!
 
@@ -69,7 +74,11 @@ public class MainActivity extends AppCompatActivity {
 
                 // Done checking, Values got printed  in the LogCat!!
 
+                //Calculating the area
+                area = 0.5*length1*length2;
+                Log.d("rahul","triangle area is :"+area);
 
+                //Calculated area and printed the value on logcat!!
 
             }
         });
