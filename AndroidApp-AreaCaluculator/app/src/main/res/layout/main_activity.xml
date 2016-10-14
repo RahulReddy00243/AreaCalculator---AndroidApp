@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,7 +8,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dp_ten">
+        android:padding="@dimen/dp_twelve"
+        android:layout_marginTop="@dimen/dp_ten">
 
         <TextView
             android:text="@string/length1_StringName"
@@ -31,7 +33,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dp_ten">
+        android:padding="@dimen/dp_twelve">
 
         <TextView
             android:text="@string/Length2_StringName"
@@ -55,7 +57,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dp_fifteen">
+        android:padding="@dimen/dp_twelve">
 
         <TextView
             android:text="@string/Area_StringName"
@@ -71,6 +73,44 @@
             android:id="@+id/AreaResultTextView"
             android:layout_weight="1"
             android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_thirtyFive"
+        android:layout_marginTop="@dimen/dp_ten">
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button8" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button6" />
     </LinearLayout>
 
 </LinearLayout>
