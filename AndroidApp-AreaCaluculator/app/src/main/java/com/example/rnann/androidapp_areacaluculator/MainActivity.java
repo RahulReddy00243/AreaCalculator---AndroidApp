@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
                       //Calculating the area
                       area = length1*length1;
-                      Log.d("rahul","triangle area is :"+area);
+                      Log.d("rahul","square area is :"+area);
 
                       //converting area from double to string -> to display the result as text on the result Text View
                       result = Double.toString(area);
@@ -129,8 +129,48 @@ public class MainActivity extends AppCompatActivity {
                   }
               });
 
+        //When 'Area Of circle' Button is Clicked We catch the Click via Handlers
 
-        
+        circle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                //Reading the input length values
+
+                //(lengthOneValueEditText.getText().toString()) gets the input value as string and thus we are parsing string to double
+
+                length1 = Double.parseDouble(lengthOneValueEditText.getText().toString());
+                lengthTwoValueEditText.setText("");
+
+                //Done reading Input values entered by the User!!
+
+
+                //printing the values read to logcat to check functioning of the App
+
+                Log.d("rahul","length1 is :"+length1);
+                Log.d("rahul","length2 is :"+length2);
+
+                // Done checking, Values got printed  in the LogCat!!
+
+                //Calculating the area
+                area = 3.14*length1*length1;
+                Log.d("rahul","circle area is :"+area);
+
+                //converting area from double to string -> to display the result as text on the result Text View
+                result = Double.toString(area);
+
+
+                resultValueTextView.setText(result);
+
+                //Calculated area and printed it on the Area Result Text View!!
+
+
+            }
+        });
+
+
+        //When 'Area Of Rectangle' Button is Clicked We catch the Click via Handlers
 
     }
 }
