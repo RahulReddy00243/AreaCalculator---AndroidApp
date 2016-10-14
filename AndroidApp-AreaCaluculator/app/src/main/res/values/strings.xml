@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidApp_Area Caluculator</string>
     <string name="length1_StringName">Length 1:</string>
+    <string name="Length2_StringName">Length 2:</string>
 </resources>

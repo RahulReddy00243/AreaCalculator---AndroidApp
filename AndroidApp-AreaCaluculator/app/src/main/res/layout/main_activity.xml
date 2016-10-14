@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Length1TextView"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textSize="18sp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -22,6 +23,29 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/Length1EditText"
+            android:layout_weight="1"
+            android:hint="Enter Length" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/Length2_StringName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Length2TextView"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/Length2EditText"
             android:layout_weight="1"
             android:hint="Enter Length" />
     </LinearLayout>
