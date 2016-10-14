@@ -10,4 +10,5 @@
     <dimen name="dp_thirtyFive">35dp</dimen>
     <dimen name="dp_Eighteen">18dp</dimen>
     <dimen name="dp_twelve">12dp</dimen>
+    <dimen name="dp_five">5dp</dimen>
 </resources>

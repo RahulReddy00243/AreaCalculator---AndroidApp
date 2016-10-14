@@ -3,4 +3,9 @@
     <string name="length1_StringName">Length 1:</string>
     <string name="Length2_StringName">Length 2:</string>
     <string name="Area_StringName">Area :</string>
+    <string name="Triangle_stringName">Area Of Triangle</string>
+    <string name="Square_StringName">Area Of Square</string>
+    <string name="Circle_StringName">Area Of Circle</string>
+    <string name="Rect_StringName">Area Of Rectangle</string>
+    <string name="Clearall_StringName">Clear All</string>
 </resources>

@@ -8,8 +8,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dp_twelve"
-        android:layout_marginTop="@dimen/dp_ten">
+        android:padding="@dimen/dp_ten"
+        android:layout_marginTop="@dimen/dp_five">
 
         <TextView
             android:text="@string/length1_StringName"
@@ -33,7 +33,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dp_twelve">
+        android:padding="@dimen/dp_ten">
 
         <TextView
             android:text="@string/Length2_StringName"
@@ -79,38 +79,43 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/dp_thirtyFive"
-        android:layout_marginTop="@dimen/dp_ten">
+        android:padding="@dimen/dim_twentyFive"
+        android:minHeight="179dp">
 
         <Button
-            android:text="Button"
+            android:text="@string/Triangle_stringName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button10" />
+            android:id="@+id/ButtonTriangle"
+            android:minHeight="53dp" />
 
         <Button
-            android:text="Button"
+            android:text="@string/Square_StringName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button9" />
+            android:id="@+id/ButtonSquare"
+            android:minHeight="53dip" />
 
         <Button
-            android:text="Button"
+            android:text="@string/Circle_StringName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button8" />
+            android:id="@+id/ButtonCircle"
+            android:minHeight="53dp" />
 
         <Button
-            android:text="Button"
+            android:text="@string/Rect_StringName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button7" />
+            android:id="@+id/ButtonRectangle"
+            android:minHeight="53dp" />
 
         <Button
-            android:text="Button"
+            android:text="@string/Clearall_StringName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button6" />
+            android:id="@+id/ButtonClearAll"
+            android:minHeight="53dip" />
     </LinearLayout>
 
 </LinearLayout>
