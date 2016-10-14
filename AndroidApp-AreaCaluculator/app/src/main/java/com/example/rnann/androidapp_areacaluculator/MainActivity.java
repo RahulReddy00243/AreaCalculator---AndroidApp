@@ -17,10 +17,11 @@ public class MainActivity extends AppCompatActivity {
 
     Button triangle;
     Button square;
-    Button Circle;
+    Button circle;
     Button rectangle;
     Button clear;
 
+    // Done With Declaration!!
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,17 @@ public class MainActivity extends AppCompatActivity {
         //Programmatically accessing the elements via their id located in R file!!
 
         lengthOneValueEditText = (EditText) findViewById(R.id.Length1EditText);
+        lengthTwoValueEditText = (EditText) findViewById(R.id.Length2EditText);
 
+        resultValueTextView = (TextView) findViewById(R.id.AreaResultTextView);
 
+        triangle = (Button) findViewById(R.id.ButtonTriangle);
+        square = (Button) findViewById(R.id.ButtonSquare);
+         circle= (Button) findViewById(R.id.ButtonCircle);
+        rectangle = (Button) findViewById(R.id.ButtonRectangle);
+        clear = (Button) findViewById(R.id.ButtonClearAll);
 
+        // Done with Accessing!!
 
 
 
